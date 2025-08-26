@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de cadastro</h1>
+        <p>Bem-vindo ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>Menu de cadastros</h2>
+        <a href="/aula5/professor.html"><button class = "professor">Cadastrar professor</button></a>
+        <a href="/aula5/aluno.html"><button class = "professor">Cadastrar aluno</button></a>
+        <a href="/aula5/curso.html"><button class = "professor">Cadastrar-se no curso</button></a>
+        <a href="/aula5/livro.html"><button class = "professor">Cadastrar </button></a>
+
+        <div class="formulario">
+                <h2>Cadastro do Curso:</h2>
+                <form action="">
+                    <label for="Nome">Nome do Curso:</label><br>
+                    <input type="text"><br><br>
+
+                    <label for="Codigo">Codigo do curso:</label><br>
+                    <input type="number"><br><br>
+
+                    <label for="serie">Série/Ano:</label>
+<select name="serie">
+  <option value="">Categoria:</option>
+  <option value="Ciên. Exatas">Ciências Exatas</option>
+  <option value="Ciên.">Ciências Humanas</option>
+  <option value="Ciên.">Ciências Biológicas</option>
+  <option value="Ling">Linguagens</option>
+  <option value="Artes">Artes</option><br><br>
+  
+</select>
+<br><br>
+                    <label for="Duração">Duração (meses):</label><br>
+                    <input type="number"><br><br>
+
+                    <label for="Modalidade">Modalidade:</label><br>
+                    <input type="radio">Presencial<br>
+                    <input type="radio">Online<br>
+                    <input type="radio">Hibrido<br><br>
+
+                    <label for="periodo">Pré-requisitos:</label><br>
+                    <input type="checkbox">Ensino Medio Completo<br>
+                    <input type="checkbox">Curso Basico<br>
+                    <input type="checkbox">Experiência Prévia<br>
+
+                    <label for="Observações">Descrição do Curso:</label>
+                    <input type="text"><br><br>
+
+
+                    <button id="Enviar" type="submit">Enviar</button>
+        <button id="Cancelar" type="reset">Cancelar</button><br><br>
+
+                </form>
+        </div>
+    </div>
+    
+</body>

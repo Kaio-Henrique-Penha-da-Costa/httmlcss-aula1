@@ -1,32 +1,24 @@
-/* Estilo global */
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
-/* Estilo do título */
+
 h1 {
     color: red;
     text-align: center;
     text-transform: uppercase;
 }
 
-/* Estilo dos parágrafos */
+
 p {
     font-size: 18px;
     color: #333;
 }
 
-/* Caixa com fundo e borda */
-.caixa {
-    background-color: lightyellow;
-    border: 2px solid orange;
-    padding: 15px;
-    margin: 20px;
-    text-align: center;
-}
 
-/* Parágrafo verde e negrito */
+
 .verde {
     color: green;
     font-weight: bold;

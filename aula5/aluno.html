@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de cadastro do professor</h1>
+        <p>Bem-vindo ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>Menu de cadastros</h2>
+        <a href="/aula5/professor.html"><button class = "professor">Cadastrar professor</button></a>
+        <a href="/aula5/aluno.html"><button class = "professor">Cadastrar aluno</button></a>
+        <a href="/aula5/curso.html"><button class = "professor">Cadastrar-se no curso</button></a>
+        <a href="/aula5/livro.html"><button class = "professor">Cadastrar </button></a>
+
+        <div class="formulario">
+                <h2>Cadastrar aluno:</h2>
+                <form action="">
+                    <label for="Nome">Nome Completo:</label><br>
+                    <input type="text"><br><br>
+
+                    <label for="Data">data:</label><br>
+                    <input type="date"><br><br>
+
+                    <label for="Email">Email:</label><br>
+                    <input type="email"><br><br>
+
+                    <label for="Telefone">Telefone:</label><br>
+                    <input type="number"><br><br>
+
+                    <label for="serie">Série/Ano:</label>
+<select name="serie">
+  <option value="">Selecione a série</option>
+  <option value="6ano">6º Ano</option>
+  <option value="7ano">7º Ano</option>
+  <option value="8ano">8º Ano</option>
+  <option value="9ano">9º Ano</option>
+  <option value="1em">1º Ano do Ensino Médio</option>
+  <option value="2em">2º Ano do Ensino Médio</option>
+  <option value="3em">3º Ano do Ensino Médio</option><br><br>
+     
+</select>
+<br><br>
+                    <label for="periodo">Periodo:</label><br>
+                    <input type="radio">Manhã<br>
+                    <input type="radio">Tarde<br>
+                    <input type="radio">Noite<br><br>
+
+                    <label for="periodo">Atividades extras:</label><br>
+                    <input type="radio">Esportes<br>
+                    <input type="radio">Musicas<br>
+                    <input type="radio">Teatro<br>
+                    <input type="radio">Informatica<br><br>
+
+                    <label for="Observações">Observações:</label>
+                    <input type="text"><br><br>
+
+
+                    <button id="Enviar" type="submit">Enviar</button>
+        <button id="Cancelar" type="reset">Cancelar</button><br><br>
+
+                </form>
+        </div>
+    </div>
+    
+</body>

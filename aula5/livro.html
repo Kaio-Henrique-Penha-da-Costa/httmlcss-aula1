@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de cadastro do professor</h1>
+        <p>Bem-vindo ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>Menu de cadastros</h2>
+        <a href="/aula5/professor.html"><button class = "professor">Cadastrar professor</button></a>
+        <a href="/aula5/aluno.html"><button class = "professor">Cadastrar aluno</button></a>
+        <a href="/aula5/curso.html"><button class = "professor">Cadastrar-se no curso</button></a>
+        <a href="/aula5/livro.html"><button class = "professor">Cadastro de Livro(Biblioteca)</button></a>
+
+        <div class="formulario">
+                <h2>Cadastro de Livro(Biblioteca)</h2>
+                <form action="">
+                    <label for="Nome">Titulo do Livro:</label><br>
+                    <input type="text"><br><br>
+
+                    <label for="Nome">Autor:</label><br>
+                    <input type="text"><br><br>
+
+                    <label for="Ano">Ano de Publicação:</label><br>
+                    <input type="date"><br><br>
+
+                    <label for="Editora">Editora:</label><br>
+                    <input type="Editora"><br><br>
+
+                    <label for="Genero">Genero:</label><br>
+<select id="serie" name="serie">
+  <option value="">Selecione o genero </option>
+  <option value="6ano">6º Ano</option>
+  <option value="7ano">7º Ano</option>
+  <option value="8ano">8º Ano</option>
+  <option value="9ano">9º Ano</option>
+  <option value="1em">1º Ano do Ensino Médio</option>
+  <option value="2em">2º Ano do Ensino Médio</option>
+  <option value="3em">3º Ano do Ensino Médio</option><br><br>
+</select><br>
+                    <br>
+                    <label for="Condições">Condições:</label><br>
+                    <input type="radio">Novo<br>
+                    <input type="radio">Usado-Bom estado<br>
+                    <input type="radio">Usado-Estado Regular <br><br>
+    
+                    <label for="Nome">Localização na biblioteca:</label><br>
+                    <input type="text"><br><br>
+
+                    <label for="periodo">Caracteristicas:</label><br>
+                    <input type="checkbox">Ilustrado<br>
+                    <input type="checkbox">Capa Dura<br>
+                    <input type="checkbox">Edição Especial<br><br>
+                    
+
+
+                    <button id="Enviar" type="submit">Enviar</button>
+        <button id="Cancelar" type="reset">Cancelar</button><br><br>
+                </form>
+        </div>
+    </div>
+    
+</body>
+</html>
