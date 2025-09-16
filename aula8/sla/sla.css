@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.tabela0{
+   border: solid black ;  
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.414) ;
+}
+
+.tabela0 th{
+    background-color: aqua;
+}
+
+.tabela0 td{
+    background-color: rgb(227, 17, 17);
+}
