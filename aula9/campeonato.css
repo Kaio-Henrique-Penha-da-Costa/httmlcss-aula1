@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.classificacao-campeonato {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.classificacao-campeonato h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.tabela-classificacao {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-classificacao th,
+.tabela-classificacao td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabela-classificacao th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabela-classificacao td.pontos {
+    font-weight: bold;
+    color: #0b63d4;
+}
+td{
+    background-color: rgb(180, 244, 254);
+}
