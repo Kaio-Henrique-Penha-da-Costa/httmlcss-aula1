@@ -1,0 +1,326 @@
+/* ==================================== */
+/* 1. ESTILOS GERAIS E RESET */
+/* ==================================== */
+
+:root {
+    /* Cores */
+    --cor-principal: #007bff; /* Azul vibrante para destaque */
+    --cor-secundaria: #0056b3; /* Azul escuro para hover/foco */
+    --cor-fundo: #f4f4f9; /* Fundo claro, suave */
+    --cor-texto-principal: #333; /* Texto escuro */
+    --cor-fundo-secao: #ffffff; /* Fundo das seções */
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo);
+}
+
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==================================== */
+/* 2. CABEÇALHO E NAVEGAÇÃO */
+/* ==================================== */
+
+header {
+    background: var(--cor-principal);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px var(--cor-sombra);
+    position: sticky; /* Mantém o cabeçalho visível ao rolar */
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+/* Estilo para o item de nav que você alterou */
+nav ul li:first-child a {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+/* ==================================== */
+/* 3. LAYOUT PRINCIPAL E SEÇÕES */
+/* ==================================== */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: var(--cor-fundo-secao);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cor-sombra);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    border-bottom: 3px solid var(--cor-principal);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--cor-secundaria);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ==================================== */
+/* 4. SEÇÃO APRESENTAÇÃO */
+/* ==================================== */
+
+#apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.perfil {
+    flex-shrink: 0; /* Impede que a foto encolha */
+}
+
+.foto-perfil {
+    width: 200px; /* Tamanho fixo para a foto */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Torna a foto redonda */
+    border: 5px solid var(--cor-principal);
+}
+
+.texto-sla h2 {
+    border-bottom: none;
+    margin-bottom: 10px;
+    color: var(--cor-texto-principal);
+}
+
+
+/* ==================================== */
+/* 5. SEÇÕES HABILIDADES E FORMAÇÃO */
+/* ==================================== */
+
+.habilidades-container {
+    display: flex;
+    gap: 40px;
+}
+
+.habilidades-container ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.formacao-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.formacao-item:last-child {
+    border-bottom: none;
+}
+
+.formacao-item h4 {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.formacao-item ul {
+    list-style: circle;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+
+/* ==================================== */
+/* 6. SEÇÕES EXPERIÊNCIA E PROJETOS */
+/* ==================================== */
+
+.experiencia-item, .projeto-card {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid var(--cor-principal);
+    background-color: #fcfcff;
+}
+
+.experiencia-item ul {
+    list-style: disc;
+    margin-left: 25px;
+}
+
+/* Estilo para os cards de projeto */
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projeto-card {
+    flex: 1 1 calc(50% - 30px); /* Ocupa metade da largura em telas grandes */
+    min-width: 300px;
+    border-top: 1px solid var(--cor-principal);
+    border-left: none;
+    box-shadow: 0 2px 5px var(--cor-sombra);
+    text-align: center;
+}
+
+.projeto-card a {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.projeto-card a:hover {
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.projeto-card p {
+    margin: 10px 0;
+}
+
+
+/* ==================================== */
+/* 7. SEÇÃO CONTATO */
+/* ==================================== */
+
+#contato {
+    text-align: center;
+}
+
+#contato h2 {
+    border-bottom: none;
+}
+
+.contato-links a {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contato-links a:hover {
+    background-color: #e9ecef;
+}
+
+.telefone {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* ==================================== */
+/* 8. RODAPÉ */
+/* ==================================== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+
+/* ==================================== */
+/* 9. MEDIA QUERIES (RESPONSIVIDADE) */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    /* Ajustes Gerais */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* Apresentação */
+    #apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Habilidades */
+    .habilidades-container {
+        flex-direction: column;
+    }
+
+    /* Projetos */
+    .projeto-card {
+        flex: 1 1 100%; /* Ocupa a largura total em telas pequenas */
+    }
+}
